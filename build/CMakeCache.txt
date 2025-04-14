@@ -294,10 +294,10 @@ OpenMPTopsort_IS_TOP_LEVEL:STATIC=ON
 OpenMPTopsort_SOURCE_DIR:STATIC=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort
 
 //CXX compiler flags for OpenMP parallelization
-OpenMP_CXX_FLAGS:STRING=NOTFOUND
+OpenMP_CXX_FLAGS:STRING=-Xclang -fopenmp
 
 //CXX compiler libraries for OpenMP parallelization
-OpenMP_CXX_LIB_NAMES:STRING=NOTFOUND
+OpenMP_CXX_LIB_NAMES:STRING=omp
 
 //C compiler flags for OpenMP parallelization
 OpenMP_C_FLAGS:STRING=NOTFOUND
@@ -308,11 +308,23 @@ OpenMP_C_LIB_NAMES:STRING=NOTFOUND
 //Path to a library.
 OpenMP_libomp_LIBRARY:FILEPATH=OpenMP_libomp_LIBRARY-NOTFOUND
 
+//Path to the omp library for OpenMP
+OpenMP_omp_LIBRARY:FILEPATH=/opt/homebrew/opt/libomp/lib/libomp.dylib
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/local/bin/pkg-config
+
+//Value Computed by CMake
+topological_sort_BINARY_DIR:STATIC=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build
+
+//Value Computed by CMake
+topological_sort_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+topological_sort_SOURCE_DIR:STATIC=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort
 
 
 ########################
@@ -517,7 +529,7 @@ MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
 //ADVANCED property for variable: MPI_mpi_LIBRARY
 MPI_mpi_LIBRARY-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
-OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp:INTERNAL=FALSE
+OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp:INTERNAL=TRUE
 //Result of TRY_COMPILE
 OpenMP_COMPILE_RESULT_C_Xclang fopenmp:INTERNAL=FALSE
 //ADVANCED property for variable: OpenMP_CXX_FLAGS
@@ -534,6 +546,8 @@ OpenMP_C_SPEC_DATE:INTERNAL=
 OpenMP_SPECTEST_C_:INTERNAL=FALSE
 //ADVANCED property for variable: OpenMP_libomp_LIBRARY
 OpenMP_libomp_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_omp_LIBRARY
+OpenMP_omp_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/bu
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/topsort_sequential.dir/all
 all: CMakeFiles/topsort_openmp.dir/all
 all: CMakeFiles/topsort_mpi.dir/all
 .PHONY : all
@@ -72,9 +73,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/topsort_sequential.dir/clean
 clean: CMakeFiles/topsort_openmp.dir/clean
 clean: CMakeFiles/topsort_mpi.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/topsort_sequential.dir
+
+# All Build rule for target.
+CMakeFiles/topsort_sequential.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles --progress-num=7,8,9 "Built target topsort_sequential"
+.PHONY : CMakeFiles/topsort_sequential.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/topsort_sequential.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/topsort_sequential.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles 0
+.PHONY : CMakeFiles/topsort_sequential.dir/rule
+
+# Convenience name for target.
+topsort_sequential: CMakeFiles/topsort_sequential.dir/rule
+.PHONY : topsort_sequential
+
+# clean rule for target.
+CMakeFiles/topsort_sequential.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/clean
+.PHONY : CMakeFiles/topsort_sequential.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/topsort_openmp.dir

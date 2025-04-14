@@ -51,6 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/topsort_sequential.dir/DependInfo.cmake"
   "CMakeFiles/topsort_openmp.dir/DependInfo.cmake"
   "CMakeFiles/topsort_mpi.dir/DependInfo.cmake"
   )

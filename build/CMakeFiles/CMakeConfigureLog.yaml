@@ -1631,3 +1631,1247 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_f0422/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_f0422.dir/build.make CMakeFiles/cmTC_f0422.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm'
+        Building C object CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Xclang -fopenmp -v -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm/OpenMPTryFlag.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.1.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o -x c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm/OpenMPTryFlag.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.1.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_f0422.dir/build.make:79: CMakeFiles/cmTC_f0422.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qDiIDm'
+        gmake: *** [Makefile:127: cmTC_f0422/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_5c7dd/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_5c7dd.dir/build.make CMakeFiles/cmTC_5c7dd.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR'
+        Building CXX object CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -Xclang -fopenmp -v -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR/OpenMPTryFlag.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.1.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -I /opt/homebrew/opt/libomp/include -fopenmp -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -std=gnu++11 -fdeprecated-macro -fdebug-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -x c++ /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR/OpenMPTryFlag.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.1.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/opt/libomp/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_5c7dd
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c7dd.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -Xclang -fopenmp -v -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -o cmTC_5c7dd  -v -Wl,-v
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.1.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.1.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_5c7dd -L/opt/homebrew/opt/libomp/lib -search_paths_first -headerpad_max_install_names -lomp CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -v -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/opt/homebrew/opt/libomp/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:263 (message)"
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_5c7dd/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_5c7dd.dir/build.make CMakeFiles/cmTC_5c7dd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -Xclang -fopenmp -v -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR/OpenMPTryFlag.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.1.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -I /opt/homebrew/opt/libomp/include -fopenmp -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -std=gnu++11 -fdeprecated-macro -fdebug-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -x c++ /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-WzNdQR/OpenMPTryFlag.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.1.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/opt/libomp/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_5c7dd]
+        ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c7dd.dir/link.txt --verbose=1]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -Xclang -fopenmp -v -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl -search_paths_first -Wl -headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -o cmTC_5c7dd  -v -Wl -v]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.1.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.1.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_5c7dd -L/opt/homebrew/opt/libomp/lib -search_paths_first -headerpad_max_install_names -lomp CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o -v -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.1.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5c7dd] ==> ignore
+          arg [-L/opt/homebrew/opt/libomp/lib] ==> dir [/opt/homebrew/opt/libomp/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-lomp] ==> lib [omp]
+          arg [CMakeFiles/cmTC_5c7dd.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-v] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        Library search paths: [;/opt/homebrew/opt/libomp/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/opt/homebrew/opt/libomp/lib] ==> [/opt/homebrew/opt/libomp/lib]
+        collapse library dir [/opt/homebrew/opt/libomp/lib] ==> [/opt/homebrew/opt/libomp/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: [omp;c++]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/opt/libomp/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_220df/fast
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_220df.dir/build.make CMakeFiles/cmTC_220df.dir/build
+        gmake[2]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H'
+        Building C object CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Xclang -fopenmp -v -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H/OpenMPTryFlag.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.1.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o -x c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H/OpenMPTryFlag.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.1.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        gmake[2]: *** [CMakeFiles/cmTC_220df.dir/build.make:79: CMakeFiles/cmTC_220df.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[2]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H'
+        gmake[1]: *** [Makefile:127: cmTC_220df/fast] Error 2
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2zWf8H'
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:36 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_45441/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_45441.dir/build.make CMakeFiles/cmTC_45441.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE'
+        Building C object CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Xclang -fopenmp -v -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE/OpenMPTryFlag.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.1.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o -x c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE/OpenMPTryFlag.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.1.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_45441.dir/build.make:79: CMakeFiles/cmTC_45441.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hgz1fE'
+        gmake: *** [Makefile:127: cmTC_45441/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:36 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_418c3/fast
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_418c3.dir/build.make CMakeFiles/cmTC_418c3.dir/build
+        gmake[2]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH'
+        Building C object CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Xclang -fopenmp -v -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH/OpenMPTryFlag.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.1.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o -x c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH/OpenMPTryFlag.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.1.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        gmake[2]: *** [CMakeFiles/cmTC_418c3.dir/build.make:79: CMakeFiles/cmTC_418c3.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[2]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH'
+        gmake[1]: *** [Makefile:127: cmTC_418c3/fast] Error 2
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-lJ4lBH'
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-iOQxhN"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-iOQxhN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-iOQxhN'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_3f03c/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_3f03c.dir/build.make CMakeFiles/cmTC_3f03c.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-iOQxhN'
+        Building C object CMakeFiles/cmTC_3f03c.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_3f03c.dir/test_mpi.c.o -MF CMakeFiles/cmTC_3f03c.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_3f03c.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-iOQxhN/test_mpi.c
+        Linking C executable cmTC_3f03c
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f03c.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_3f03c.dir/test_mpi.c.o -o cmTC_3f03c  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-iOQxhN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-i8EcD3"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-i8EcD3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-i8EcD3'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e4292/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e4292.dir/build.make CMakeFiles/cmTC_e4292.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-i8EcD3'
+        Building CXX object CMakeFiles/cmTC_e4292.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_e4292.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_e4292.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_e4292.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-i8EcD3/test_mpi.cpp
+        Linking CXX executable cmTC_e4292
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4292.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_e4292.dir/test_mpi.cpp.o -o cmTC_e4292  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-i8EcD3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-N7pQk0"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-N7pQk0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-N7pQk0'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_3aaba/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_3aaba.dir/build.make CMakeFiles/cmTC_3aaba.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-N7pQk0'
+        Building CXX object CMakeFiles/cmTC_3aaba.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_3aaba.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_3aaba.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_3aaba.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-N7pQk0/test_mpi.cpp
+        Linking CXX executable cmTC_3aaba
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aaba.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_3aaba.dir/test_mpi.cpp.o -o cmTC_3aaba  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-N7pQk0'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-YTBCGu"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-YTBCGu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-YTBCGu'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_45daa/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_45daa.dir/build.make CMakeFiles/cmTC_45daa.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-YTBCGu'
+        Building C object CMakeFiles/cmTC_45daa.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_45daa.dir/test_mpi.c.o -MF CMakeFiles/cmTC_45daa.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_45daa.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-YTBCGu/test_mpi.c
+        Linking C executable cmTC_45daa
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45daa.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_45daa.dir/test_mpi.c.o -o cmTC_45daa  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-YTBCGu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RVupUC"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RVupUC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RVupUC'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_722d6/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_722d6.dir/build.make CMakeFiles/cmTC_722d6.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RVupUC'
+        Building CXX object CMakeFiles/cmTC_722d6.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_722d6.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_722d6.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_722d6.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RVupUC/test_mpi.cpp
+        Linking CXX executable cmTC_722d6
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_722d6.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_722d6.dir/test_mpi.cpp.o -o cmTC_722d6  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RVupUC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Lf6IyM"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Lf6IyM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Lf6IyM'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_b5f4f/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_b5f4f.dir/build.make CMakeFiles/cmTC_b5f4f.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Lf6IyM'
+        Building CXX object CMakeFiles/cmTC_b5f4f.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_b5f4f.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_b5f4f.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_b5f4f.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Lf6IyM/test_mpi.cpp
+        Linking CXX executable cmTC_b5f4f
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5f4f.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_b5f4f.dir/test_mpi.cpp.o -o cmTC_b5f4f  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Lf6IyM'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-yhLsp2"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-yhLsp2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-yhLsp2'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_92982/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_92982.dir/build.make CMakeFiles/cmTC_92982.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-yhLsp2'
+        Building C object CMakeFiles/cmTC_92982.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_92982.dir/test_mpi.c.o -MF CMakeFiles/cmTC_92982.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_92982.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-yhLsp2/test_mpi.c
+        Linking C executable cmTC_92982
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92982.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_92982.dir/test_mpi.c.o -o cmTC_92982  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-yhLsp2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7LIZIZ"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7LIZIZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7LIZIZ'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_b11fc/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_b11fc.dir/build.make CMakeFiles/cmTC_b11fc.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7LIZIZ'
+        Building CXX object CMakeFiles/cmTC_b11fc.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_b11fc.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_b11fc.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_b11fc.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7LIZIZ/test_mpi.cpp
+        Linking CXX executable cmTC_b11fc
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b11fc.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_b11fc.dir/test_mpi.cpp.o -o cmTC_b11fc  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7LIZIZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-0qHbBN"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-0qHbBN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-0qHbBN'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_0ee07/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_0ee07.dir/build.make CMakeFiles/cmTC_0ee07.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-0qHbBN'
+        Building CXX object CMakeFiles/cmTC_0ee07.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_0ee07.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_0ee07.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_0ee07.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-0qHbBN/test_mpi.cpp
+        Linking CXX executable cmTC_0ee07
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ee07.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_0ee07.dir/test_mpi.cpp.o -o cmTC_0ee07  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-0qHbBN'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-IKD2EV"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-IKD2EV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-IKD2EV'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_45b1a/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_45b1a.dir/build.make CMakeFiles/cmTC_45b1a.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-IKD2EV'
+        Building C object CMakeFiles/cmTC_45b1a.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_45b1a.dir/test_mpi.c.o -MF CMakeFiles/cmTC_45b1a.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_45b1a.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-IKD2EV/test_mpi.c
+        Linking C executable cmTC_45b1a
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45b1a.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_45b1a.dir/test_mpi.c.o -o cmTC_45b1a  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-IKD2EV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Rpy396"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Rpy396"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Rpy396'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_b2277/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_b2277.dir/build.make CMakeFiles/cmTC_b2277.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Rpy396'
+        Building CXX object CMakeFiles/cmTC_b2277.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_b2277.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_b2277.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_b2277.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Rpy396/test_mpi.cpp
+        Linking CXX executable cmTC_b2277
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2277.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_b2277.dir/test_mpi.cpp.o -o cmTC_b2277  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Rpy396'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7dQR4X"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7dQR4X"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7dQR4X'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_919e9/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_919e9.dir/build.make CMakeFiles/cmTC_919e9.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7dQR4X'
+        Building CXX object CMakeFiles/cmTC_919e9.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_919e9.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_919e9.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_919e9.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7dQR4X/test_mpi.cpp
+        Linking CXX executable cmTC_919e9
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_919e9.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_919e9.dir/test_mpi.cpp.o -o cmTC_919e9  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-7dQR4X'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qETFfR"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qETFfR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qETFfR'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_47647/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_47647.dir/build.make CMakeFiles/cmTC_47647.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qETFfR'
+        Building C object CMakeFiles/cmTC_47647.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_47647.dir/test_mpi.c.o -MF CMakeFiles/cmTC_47647.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_47647.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qETFfR/test_mpi.c
+        Linking C executable cmTC_47647
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47647.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_47647.dir/test_mpi.c.o -o cmTC_47647  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-qETFfR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-aCr6R7"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-aCr6R7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-aCr6R7'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_66947/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_66947.dir/build.make CMakeFiles/cmTC_66947.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-aCr6R7'
+        Building CXX object CMakeFiles/cmTC_66947.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_66947.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_66947.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_66947.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-aCr6R7/test_mpi.cpp
+        Linking CXX executable cmTC_66947
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66947.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_66947.dir/test_mpi.cpp.o -o cmTC_66947  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-aCr6R7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nTeiyb"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nTeiyb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nTeiyb'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_94a53/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_94a53.dir/build.make CMakeFiles/cmTC_94a53.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nTeiyb'
+        Building CXX object CMakeFiles/cmTC_94a53.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_94a53.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_94a53.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_94a53.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nTeiyb/test_mpi.cpp
+        Linking CXX executable cmTC_94a53
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94a53.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_94a53.dir/test_mpi.cpp.o -o cmTC_94a53  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nTeiyb'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-BqotWr"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-BqotWr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-BqotWr'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_1b695/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_1b695.dir/build.make CMakeFiles/cmTC_1b695.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-BqotWr'
+        Building C object CMakeFiles/cmTC_1b695.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_1b695.dir/test_mpi.c.o -MF CMakeFiles/cmTC_1b695.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_1b695.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-BqotWr/test_mpi.c
+        Linking C executable cmTC_1b695
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b695.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_1b695.dir/test_mpi.c.o -o cmTC_1b695  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-BqotWr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-cQ8crD"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-cQ8crD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-cQ8crD'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_b8c48/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_b8c48.dir/build.make CMakeFiles/cmTC_b8c48.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-cQ8crD'
+        Building CXX object CMakeFiles/cmTC_b8c48.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_b8c48.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_b8c48.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_b8c48.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-cQ8crD/test_mpi.cpp
+        Linking CXX executable cmTC_b8c48
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8c48.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_b8c48.dir/test_mpi.cpp.o -o cmTC_b8c48  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-cQ8crD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hPT17J"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hPT17J"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hPT17J'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_939f2/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_939f2.dir/build.make CMakeFiles/cmTC_939f2.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hPT17J'
+        Building CXX object CMakeFiles/cmTC_939f2.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_939f2.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_939f2.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_939f2.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hPT17J/test_mpi.cpp
+        Linking CXX executable cmTC_939f2
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_939f2.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_939f2.dir/test_mpi.cpp.o -o cmTC_939f2  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-hPT17J'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-MzOuvt"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-MzOuvt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-MzOuvt'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_1dce3/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_1dce3.dir/build.make CMakeFiles/cmTC_1dce3.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-MzOuvt'
+        Building C object CMakeFiles/cmTC_1dce3.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_1dce3.dir/test_mpi.c.o -MF CMakeFiles/cmTC_1dce3.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_1dce3.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-MzOuvt/test_mpi.c
+        Linking C executable cmTC_1dce3
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dce3.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_1dce3.dir/test_mpi.c.o -o cmTC_1dce3  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-MzOuvt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-mhsqgy"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-mhsqgy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-mhsqgy'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_a7767/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_a7767.dir/build.make CMakeFiles/cmTC_a7767.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-mhsqgy'
+        Building CXX object CMakeFiles/cmTC_a7767.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_a7767.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_a7767.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_a7767.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-mhsqgy/test_mpi.cpp
+        Linking CXX executable cmTC_a7767
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7767.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_a7767.dir/test_mpi.cpp.o -o cmTC_a7767  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-mhsqgy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2gIK9f"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2gIK9f"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2gIK9f'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_94baf/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_94baf.dir/build.make CMakeFiles/cmTC_94baf.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2gIK9f'
+        Building CXX object CMakeFiles/cmTC_94baf.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_94baf.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_94baf.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_94baf.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2gIK9f/test_mpi.cpp
+        Linking CXX executable cmTC_94baf
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94baf.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_94baf.dir/test_mpi.cpp.o -o cmTC_94baf  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-2gIK9f'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-w8OJQb"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-w8OJQb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-w8OJQb'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_f8529/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_f8529.dir/build.make CMakeFiles/cmTC_f8529.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-w8OJQb'
+        Building C object CMakeFiles/cmTC_f8529.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_f8529.dir/test_mpi.c.o -MF CMakeFiles/cmTC_f8529.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_f8529.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-w8OJQb/test_mpi.c
+        Linking C executable cmTC_f8529
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8529.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_f8529.dir/test_mpi.c.o -o cmTC_f8529  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-w8OJQb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-sFFsEy"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-sFFsEy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-sFFsEy'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_83a88/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_83a88.dir/build.make CMakeFiles/cmTC_83a88.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-sFFsEy'
+        Building CXX object CMakeFiles/cmTC_83a88.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_83a88.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_83a88.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_83a88.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-sFFsEy/test_mpi.cpp
+        Linking CXX executable cmTC_83a88
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83a88.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_83a88.dir/test_mpi.cpp.o -o cmTC_83a88  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-sFFsEy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-5qpavy"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-5qpavy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-5qpavy'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_9d164/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_9d164.dir/build.make CMakeFiles/cmTC_9d164.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-5qpavy'
+        Building CXX object CMakeFiles/cmTC_9d164.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_9d164.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_9d164.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_9d164.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-5qpavy/test_mpi.cpp
+        Linking CXX executable cmTC_9d164
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d164.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_9d164.dir/test_mpi.cpp.o -o cmTC_9d164  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-5qpavy'
+        
+      exitCode: 0
+...

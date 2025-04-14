@@ -1,3 +1,4 @@
+/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/topsort_sequential.dir
 /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/topsort_openmp.dir
 /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/topsort_mpi.dir
 /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/edit_cache.dir

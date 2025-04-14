@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named topsort_sequential
+
+# Build rule for target.
+topsort_sequential: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 topsort_sequential
+.PHONY : topsort_sequential
+
+# fast build rule for target.
+topsort_sequential/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/build
+.PHONY : topsort_sequential/fast
+
+#=============================================================================
 # Target rules for targets named topsort_openmp
 
 # Build rule for target.
@@ -190,6 +203,30 @@ src/main_openmp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_openmp.dir/build.make CMakeFiles/topsort_openmp.dir/src/main_openmp.cpp.s
 .PHONY : src/main_openmp.cpp.s
 
+src/main_sequential.o: src/main_sequential.cpp.o
+.PHONY : src/main_sequential.o
+
+# target to build an object file
+src/main_sequential.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/src/main_sequential.cpp.o
+.PHONY : src/main_sequential.cpp.o
+
+src/main_sequential.i: src/main_sequential.cpp.i
+.PHONY : src/main_sequential.i
+
+# target to preprocess a source file
+src/main_sequential.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/src/main_sequential.cpp.i
+.PHONY : src/main_sequential.cpp.i
+
+src/main_sequential.s: src/main_sequential.cpp.s
+.PHONY : src/main_sequential.s
+
+# target to generate assembly for a file
+src/main_sequential.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/src/main_sequential.cpp.s
+.PHONY : src/main_sequential.cpp.s
+
 src/topological_sort_mpi.o: src/topological_sort_mpi.cpp.o
 .PHONY : src/topological_sort_mpi.o
 
@@ -238,6 +275,30 @@ src/topological_sort_openmp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_openmp.dir/build.make CMakeFiles/topsort_openmp.dir/src/topological_sort_openmp.cpp.s
 .PHONY : src/topological_sort_openmp.cpp.s
 
+src/topological_sort_sequential.o: src/topological_sort_sequential.cpp.o
+.PHONY : src/topological_sort_sequential.o
+
+# target to build an object file
+src/topological_sort_sequential.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/src/topological_sort_sequential.cpp.o
+.PHONY : src/topological_sort_sequential.cpp.o
+
+src/topological_sort_sequential.i: src/topological_sort_sequential.cpp.i
+.PHONY : src/topological_sort_sequential.i
+
+# target to preprocess a source file
+src/topological_sort_sequential.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/src/topological_sort_sequential.cpp.i
+.PHONY : src/topological_sort_sequential.cpp.i
+
+src/topological_sort_sequential.s: src/topological_sort_sequential.cpp.s
+.PHONY : src/topological_sort_sequential.s
+
+# target to generate assembly for a file
+src/topological_sort_sequential.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topsort_sequential.dir/build.make CMakeFiles/topsort_sequential.dir/src/topological_sort_sequential.cpp.s
+.PHONY : src/topological_sort_sequential.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -248,18 +309,25 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... topsort_mpi"
 	@echo "... topsort_openmp"
+	@echo "... topsort_sequential"
 	@echo "... src/main_mpi.o"
 	@echo "... src/main_mpi.i"
 	@echo "... src/main_mpi.s"
 	@echo "... src/main_openmp.o"
 	@echo "... src/main_openmp.i"
 	@echo "... src/main_openmp.s"
+	@echo "... src/main_sequential.o"
+	@echo "... src/main_sequential.i"
+	@echo "... src/main_sequential.s"
 	@echo "... src/topological_sort_mpi.o"
 	@echo "... src/topological_sort_mpi.i"
 	@echo "... src/topological_sort_mpi.s"
 	@echo "... src/topological_sort_openmp.o"
 	@echo "... src/topological_sort_openmp.i"
 	@echo "... src/topological_sort_openmp.s"
+	@echo "... src/topological_sort_sequential.o"
+	@echo "... src/topological_sort_sequential.i"
+	@echo "... src/topological_sort_sequential.s"
 .PHONY : help
 
 
