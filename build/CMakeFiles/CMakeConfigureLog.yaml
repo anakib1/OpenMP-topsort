@@ -1415,3 +1415,219 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Fgqp9G"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Fgqp9G"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Fgqp9G'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_5766f/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_5766f.dir/build.make CMakeFiles/cmTC_5766f.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Fgqp9G'
+        Building C object CMakeFiles/cmTC_5766f.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_5766f.dir/test_mpi.c.o -MF CMakeFiles/cmTC_5766f.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_5766f.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Fgqp9G/test_mpi.c
+        Linking C executable cmTC_5766f
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5766f.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_5766f.dir/test_mpi.c.o -o cmTC_5766f  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-Fgqp9G'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RItcbp"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RItcbp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RItcbp'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_665bc/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_665bc.dir/build.make CMakeFiles/cmTC_665bc.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RItcbp'
+        Building CXX object CMakeFiles/cmTC_665bc.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_665bc.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_665bc.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_665bc.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RItcbp/test_mpi.cpp
+        Linking CXX executable cmTC_665bc
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_665bc.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_665bc.dir/test_mpi.cpp.o -o cmTC_665bc  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-RItcbp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-3uG7sN"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-3uG7sN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-3uG7sN'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_0ba20/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_0ba20.dir/build.make CMakeFiles/cmTC_0ba20.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-3uG7sN'
+        Building CXX object CMakeFiles/cmTC_0ba20.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_0ba20.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_0ba20.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_0ba20.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-3uG7sN/test_mpi.cpp
+        Linking CXX executable cmTC_0ba20
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ba20.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_0ba20.dir/test_mpi.cpp.o -o cmTC_0ba20  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-3uG7sN'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-r3fDtq"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-r3fDtq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-r3fDtq'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_0a6bd/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_0a6bd.dir/build.make CMakeFiles/cmTC_0a6bd.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-r3fDtq'
+        Building C object CMakeFiles/cmTC_0a6bd.dir/test_mpi.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_0a6bd.dir/test_mpi.c.o -MF CMakeFiles/cmTC_0a6bd.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_0a6bd.dir/test_mpi.c.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-r3fDtq/test_mpi.c
+        Linking C executable cmTC_0a6bd
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a6bd.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_0a6bd.dir/test_mpi.c.o -o cmTC_0a6bd  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-r3fDtq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nKtwHJ"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nKtwHJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nKtwHJ'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_08b33/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_08b33.dir/build.make CMakeFiles/cmTC_08b33.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nKtwHJ'
+        Building CXX object CMakeFiles/cmTC_08b33.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_08b33.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_08b33.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_08b33.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nKtwHJ/test_mpi.cpp
+        Linking CXX executable cmTC_08b33
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08b33.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_08b33.dir/test_mpi.cpp.o -o cmTC_08b33  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-nKtwHJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/local/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-VvqQHc"
+      binary: "/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-VvqQHc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -L/opt/homebrew/opt/libomp/lib -lomp"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-VvqQHc'
+        
+        Run Build Command(s): /opt/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_61969/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_61969.dir/build.make CMakeFiles/cmTC_61969.dir/build
+        gmake[1]: Entering directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-VvqQHc'
+        Building CXX object CMakeFiles/cmTC_61969.dir/test_mpi.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.7/include -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -MD -MT CMakeFiles/cmTC_61969.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_61969.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_61969.dir/test_mpi.cpp.o -c /Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-VvqQHc/test_mpi.cpp
+        Linking CXX executable cmTC_61969
+        /opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61969.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_61969.dir/test_mpi.cpp.o -o cmTC_61969  /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib
+        gmake[1]: Leaving directory '/Users/sviatoslavbidzilia/Documents/knu/rpp/openmp-topsort/build/CMakeFiles/CMakeScratch/TryCompile-VvqQHc'
+        
+      exitCode: 0
+...

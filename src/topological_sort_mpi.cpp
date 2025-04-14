@@ -5,7 +5,7 @@ std::vector<int> topologicalSortMPI(const std::vector<std::vector<int>>& graph) 
     int numVertices = graph.size();
     std::vector<int> inDegree(numVertices, 0);
     std::vector<int> result;
-    std::stack<int> zeroInDegree;
+    std::vector<int> zeroInDegreeVec;  // Using vector instead of stack for easier MPI communication
 
     int rank, size;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -21,29 +21,75 @@ std::vector<int> topologicalSortMPI(const std::vector<std::vector<int>>& graph) 
     // Gather in-degrees from all processes
     MPI_Allreduce(MPI_IN_PLACE, inDegree.data(), numVertices, MPI_INT, MPI_SUM, MPI_COMM_WORLD);
 
-    // Collect all vertices with zero in-degree
-    if (rank == 0) {
-        for (int i = 0; i < numVertices; ++i) {
-            if (inDegree[i] == 0) {
-                zeroInDegree.push(i);
-            }
+    // Each process finds its portion of zero in-degree vertices
+    for (int i = rank; i < numVertices; i += size) {
+        if (inDegree[i] == 0) {
+            zeroInDegreeVec.push_back(i);
         }
     }
 
-    // Broadcast zero in-degree vertices to all processes
-    // Process vertices
-    while (!zeroInDegree.empty()) {
-        int u = zeroInDegree.top();
-        zeroInDegree.pop();
-        result.push_back(u);
+    // Process vertices until no more zero in-degree vertices exist
+    while (true) {
+        // Share the number of zero in-degree vertices each process has
+        int localZeroCount = zeroInDegreeVec.size();
+        int totalZeroCount;
+        MPI_Allreduce(&localZeroCount, &totalZeroCount, 1, MPI_INT, MPI_SUM, MPI_COMM_WORLD);
 
-        for (int v : graph[u]) {
-            inDegree[v]--;
-            if (inDegree[v] == 0) {
-                zeroInDegree.push(v);
+        if (totalZeroCount == 0) {
+            break;  // No more vertices to process
+        }
+
+        // Process one vertex from each process that has zero in-degree vertices
+        if (!zeroInDegreeVec.empty()) {
+            int currentVertex = zeroInDegreeVec.back();
+            zeroInDegreeVec.pop_back();
+            result.push_back(currentVertex);
+
+            // Create temporary array for degree updates
+            std::vector<int> degreeUpdates(numVertices, 0);
+            
+            // Update in-degrees for neighbors
+            for (int v : graph[currentVertex]) {
+                degreeUpdates[v]--;
+            }
+
+            // Combine all degree updates
+            MPI_Allreduce(MPI_IN_PLACE, degreeUpdates.data(), numVertices, MPI_INT, MPI_SUM, MPI_COMM_WORLD);
+            
+            // Apply updates and check for new zero in-degree vertices
+            for (int v = rank; v < numVertices; v += size) {
+                inDegree[v] += degreeUpdates[v];
+                if (inDegree[v] == 0 && degreeUpdates[v] != 0) {
+                    zeroInDegreeVec.push_back(v);
+                }
             }
         }
+
+        // Synchronize to ensure all processes have consistent state
+        MPI_Barrier(MPI_COMM_WORLD);
     }
 
-    return result;
+    // Gather all partial results to all processes
+    int localResultSize = result.size();
+    std::vector<int> allSizes(size);
+    MPI_Allgather(&localResultSize, 1, MPI_INT, allSizes.data(), 1, MPI_INT, MPI_COMM_WORLD);
+
+    int totalSize = 0;
+    for (int s : allSizes) {
+        totalSize += s;
+    }
+
+    std::vector<int> globalResult(totalSize);
+    std::vector<int> displacements(size);
+    int currentDisp = 0;
+    for (int i = 0; i < size; i++) {
+        displacements[i] = currentDisp;
+        currentDisp += allSizes[i];
+    }
+
+    MPI_Allgatherv(result.data(), localResultSize, MPI_INT,
+                   globalResult.data(), allSizes.data(), displacements.data(),
+                   MPI_INT, MPI_COMM_WORLD);
+
+    return globalResult;
 } 
